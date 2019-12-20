@@ -4,20 +4,20 @@
     {{#router}}
     <router-view/>
     {{else}}
-    <HelloWorld/>
+    <ThreePage/>
     {{/router}}
   </div>
 </template>
 
 <script>
 {{#unless router}}
-import HelloWorld from './components/HelloWorld'
+import ThreePage from './components/ThreePage'
 
 {{/unless}}
 export default {
   name: 'App'{{#router}}{{else}},
   components: {
-    HelloWorld
+    ThreePage
   }{{/router}}
 }
 </script>
